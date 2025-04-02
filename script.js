@@ -37,7 +37,7 @@ function opentab(tabname) {
     for (tabcontent of tabcontents) {
         tabcontent.classList.remove("active-tab");
     }
-    event.currentTarget.classList.add("active-link");
+    Event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
 
@@ -50,23 +50,6 @@ Document.querySelectorAll('.btn').forEach(link => {
         }
     });
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-    // Function to animate skill bars
-    function animateSkills() {
-        const skillProgresses = document.querySelectorAll('.skill-progress');
-
-        skillProgresses.forEach(progress => {
-            const percent = progress.getAttribute('data-percent');
-            progress.style.width = '0';
-
-            // Trigger animation after a small delay
-            setTimeout(() => {
-                progress.style.width = `${percent}%`;
-            }, 100);
-        });
-    }
-    })
 
     document.addEventListener('DOMContentLoaded', function () {
         const slider = document.querySelector('.skills-slider-track');

@@ -41,7 +41,7 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
-document.querySelectorAll('.btn').forEach(link => {
+Document.querySelectorAll('.btn').forEach(link => {
     link.addEventListener('click', function (event) {
         event.preventDefault();
         let target = document.querySelector(this.getAttribute('href'));
